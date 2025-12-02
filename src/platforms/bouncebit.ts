@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "bouncebit",
   name: "BounceBit",
@@ -13,4 +14,44 @@ export const platform: PlatformRaw = {
   },
 };
 
-export const services: ServiceRaw[] = [];
+const contract = {
+  name: "CeDeFi v2",
+  address: "65YBWQitcBexwuaBKfAV163xDd4LzVAdytATLbttpgxx",
+};
+
+const rewardsContract = {
+  name: "Rewards",
+  address: "5DBxQ4KRKgpCEp46fSs2RG4uoZ5totahCLyjmnn6tKRg",
+};
+
+const promoContract = {
+  name: "Promo",
+  address: "5HRzz8VDD9QjpEBBdq6hBUEXcssxW5mPnod4L6Qgnh9g",
+};
+
+const service: ServiceRaw = {
+  id: `${platform.id}-cedefi-v2`,
+  name: "CeDeFi",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+const rewardsService: ServiceRaw = {
+  id: `${platform.id}-cedefi`,
+  name: "Rewards",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [rewardsContract],
+};
+
+const promoService: ServiceRaw = {
+  id: `${platform.id}-promo`,
+  name: "Promo",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [promoContract],
+};
+
+export const services: ServiceRaw[] = [service, rewardsService, promoService];
+export default services;

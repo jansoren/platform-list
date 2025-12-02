@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "debridge",
   name: "deBridge",
@@ -17,4 +18,58 @@ export const platform: PlatformRaw = {
   tags: ["tool", "bridge", "dapp"],
 };
 
-export const services: ServiceRaw[] = [];
+const transferContract = {
+  name: "DeBridge",
+  address: "DEbrdGj3HsRsAzx6uH4MKyREKxVAfBydijLUF3ygsFfh",
+};
+
+const aidropContract = {
+  name: "Airdrop",
+  address: "DBrLFG4dco1xNC5Aarbt3KEaKaJ5rBYHwysqZoeqsSFE",
+};
+
+const vaultContract = {
+  name: "Vault",
+  address: "DeDRoPXNyHRJSagxZBBqs4hLAAM1bGKgxh7cyfuNCBpo",
+};
+
+const sourceContract = {
+  name: "Bridge",
+  address: "src5qyZHqTqecJV4aY6Cb6zDZLMDzrDKKezs22MPHr4",
+};
+
+const destContract = {
+  name: "Bridge",
+  address: "dst5MGcFPoBeREFAA5E3tU5ij8m5uVYwkzkSAbsLbNo",
+};
+
+const transferService: ServiceRaw = {
+  id: `${platform.id}-transfer`,
+  name: "Transfer",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [transferContract],
+};
+
+const vaultService: ServiceRaw = {
+  id: `${platform.id}-vault`,
+  name: "Vault",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [vaultContract],
+};
+
+const airdropService: ServiceRaw = {
+  id: `${platform.id}-airdrop`,
+  name: "Airdrop",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [aidropContract],
+};
+
+export const services: ServiceRaw[] = [
+  transferService,
+  vaultService,
+  airdropService,
+];
+export default services;

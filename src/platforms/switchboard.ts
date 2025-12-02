@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "switchboard",
   name: "Switchboard",
@@ -16,4 +17,19 @@ export const platform: PlatformRaw = {
   tags: ["tool"],
   tokens: ["SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx"],
 };
-export const services: ServiceRaw[] = [];
+
+const contract = {
+  name: "On Demand",
+  address: "SBondMDrcV3K4kxZR1HNVT7osZxAHVHgYXL5Ze1oMUv",
+};
+
+const service: ServiceRaw = {
+  id: `${platform.id}-on-demand`,
+  name: "On Demand",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+export const services: ServiceRaw[] = [service];
+export default services;

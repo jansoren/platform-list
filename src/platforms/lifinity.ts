@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "lifinity",
   name: "Lifinity",
@@ -19,4 +20,32 @@ export const platform: PlatformRaw = {
   ],
   tags: ["dapp"],
 };
-export const services: ServiceRaw[] = [];
+
+const contract = {
+  name: "Locker",
+  address: "LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa",
+};
+
+const rewarderContract = {
+  name: "Rewarder",
+  address: "LRewdYDnxyP9HXCL6DQYgTaeL9FKb5Pc8Gr4UbVrtnj",
+};
+
+const service: ServiceRaw = {
+  id: `${platform.id}-locker`,
+  name: "Locker",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+const rewarderService: ServiceRaw = {
+  id: `${platform.id}-Reward`,
+  name: "Reward",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [rewarderContract],
+};
+
+export const services: ServiceRaw[] = [service, rewarderService];
+export default services;

@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "fluxbeam",
   name: "Flux Beam",
@@ -15,4 +16,18 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 
-export const services: ServiceRaw[] = [];
+const contract = {
+  name: "Pool",
+  address: "FLUXubRmkEi2q6K3Y9kBPg9248ggaZVsoSFhtJHSrm1X",
+};
+
+const service: ServiceRaw = {
+  id: `${platform.id}-pool`,
+  name: "Pool",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+export const services: ServiceRaw[] = [service];
+export default services;

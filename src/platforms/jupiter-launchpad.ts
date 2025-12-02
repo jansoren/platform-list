@@ -1,4 +1,6 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
+
 export const platform: PlatformRaw = {
   id: "jupiter-launchpad",
   name: "Jupiter Launchpad",
@@ -9,4 +11,19 @@ export const platform: PlatformRaw = {
   },
   tags: ["tool"],
 };
-export const services: ServiceRaw[] = [];
+
+const lfgContract = {
+  name: "LFG",
+  address: "DiSLRwcSFvtwvMWSs7ubBMvYRaYNYupa76ZSuYLe6D7j",
+};
+
+const lfgService: ServiceRaw = {
+  id: `${platform.id}-lfg`,
+  name: "LFG",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [lfgContract],
+};
+
+export const services: ServiceRaw[] = [lfgService];
+export default services;

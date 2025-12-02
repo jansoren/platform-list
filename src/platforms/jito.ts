@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "jito",
   name: "Jito",
@@ -19,4 +20,48 @@ export const platform: PlatformRaw = {
   tags: ["tool"],
 };
 
-export const services: ServiceRaw[] = [];
+const contract = {
+  name: "Governance",
+  address: "jtogvBNH3WBSWDYD5FJfQP2ZxNTuf82zL8GkEhPeaJx",
+};
+
+const restakingContract = {
+  name: "Restaking",
+  address: "Vau1t6sLNxnzB7ZDsef8TLbPLfyZMYXH8WTNqUdm9g8",
+};
+
+const airdropContract = {
+  name: "Airdrop",
+  address: "mERKcfxMC5SqJn4Ld4BUris3WKZZ1ojjWJ3A3J5CKxv",
+};
+
+const service: ServiceRaw = {
+  id: `${platform.id}-governance`,
+  name: "Governance",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+const restakingService: ServiceRaw = {
+  id: `${platform.id}-restaking`,
+  name: "Restaking",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [restakingContract],
+};
+
+const airdropService: ServiceRaw = {
+  id: `${platform.id}-airdrop`,
+  name: "Airdrop",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [airdropContract],
+};
+
+export const services: ServiceRaw[] = [
+  service,
+  restakingService,
+  airdropService,
+];
+export default services;

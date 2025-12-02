@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "circle",
   name: "Circle",
@@ -15,4 +16,31 @@ export const platform: PlatformRaw = {
   tokens: ["EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"],
 };
 
-export const services: ServiceRaw[] = [];
+const minterContract = {
+  name: "CCTP",
+  address: "CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3",
+};
+
+const transmitterContract = {
+  name: "CCTP",
+  address: "CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd",
+};
+
+const minterService: ServiceRaw = {
+  id: `${platform.id}-cctp-minter`,
+  name: "CCTP",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [minterContract],
+};
+
+const transmitterService: ServiceRaw = {
+  id: `${platform.id}-cctp-transmitter`,
+  name: "CCTP",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [transmitterContract],
+};
+
+export const services: ServiceRaw[] = [minterService, transmitterService];
+export default services;

@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "hedgehog",
   name: "Hedgehog Markets",
@@ -14,4 +15,28 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 
-export const services: ServiceRaw[] = [];
+const ammContract = {
+  name: "AMM",
+  address: "Hr4whNgXr3yZsJvx3TVSwfsFgXuSEPB1xKmvgrtLhsrM",
+};
+
+const swapContract = {
+  name: "Swap",
+  address: "2ZznCMfx2XP43zaPw9R9wKnjXWiEeEexyhdBPv3UqDtD",
+};
+
+const tokensContract = {
+  name: "Tokens",
+  address: "D8vMVKonxkbBtAXAxBwPPWyTfon8337ARJmHvwtsF98G",
+};
+
+const governanceV1Service: ServiceRaw = {
+  id: `${platform.id}-markets`,
+  name: "Markets",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [ammContract, swapContract, tokensContract],
+};
+
+export const services: ServiceRaw[] = [governanceV1Service];
+export default services;

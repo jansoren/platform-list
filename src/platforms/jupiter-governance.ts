@@ -1,4 +1,6 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
+
 export const platform: PlatformRaw = {
   id: "jupiter-governance",
   name: "Jupiter DAO",
@@ -11,4 +13,28 @@ export const platform: PlatformRaw = {
   tags: ["dao", "dapp"],
 };
 
-export const services: ServiceRaw[] = [];
+export const jupiterGovernanceContract = {
+  name: "Governance",
+  address: "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
+};
+
+export const jupiterVoteContract = {
+  name: "Locker Vote",
+  address: "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+};
+
+const asrContract = {
+  name: "ASR Distributor",
+  address: "Dis2TfkFnXFkrtvAktEkw37sdb7qwJgY6H7YZJwk51wK",
+};
+
+const asrService: ServiceRaw = {
+  id: `jupiter-exchange-asr`,
+  name: "ASR",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [asrContract],
+};
+
+export const services: ServiceRaw[] = [asrService];
+export default services;

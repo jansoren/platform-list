@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "ensofi",
   name: "EnsoFi",
@@ -15,4 +16,48 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 
-export const services: ServiceRaw[] = [];
+const lendingContract = {
+  name: "Lending Fixed Terms",
+  address: "ensoQXKf4MvNuEC3M9xmcqUqgucFNd5UzAonDdUtgqn",
+};
+
+const lendingFlexContract = {
+  name: "Lending Flexible Terms",
+  address: "enseM1J4dGgwEw3qDyuVBi7YsjgwqvKzuX3ZLaboLGv",
+};
+
+const liquidityContract = {
+  name: "Liquidity",
+  address: "ensSuXMeaUhRC7Re3ukaxLcX2E4qmd2LZxbxsK9XcWz",
+};
+
+const lendingService: ServiceRaw = {
+  id: `${platform.id}-lending`,
+  name: "Lending",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [lendingContract],
+};
+
+const lendingFlexService: ServiceRaw = {
+  id: `${platform.id}-lending-flex`,
+  name: "Lending",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [lendingFlexContract],
+};
+
+const liquidityService: ServiceRaw = {
+  id: `${platform.id}-liquidity`,
+  name: "Liquidity",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [liquidityContract],
+};
+
+export const services: ServiceRaw[] = [
+  lendingService,
+  lendingFlexService,
+  liquidityService,
+];
+export default services;

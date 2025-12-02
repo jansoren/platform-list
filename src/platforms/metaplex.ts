@@ -13,4 +13,16 @@ export const platform: PlatformRaw = {
   tokens: ["METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m"],
   tags: ["tool", "dapp"],
 };
+
+// Contracts (exported for cross-platform use)
+export const metaplexContract = {
+  name: "Metaplex",
+  address: "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+};
+
+export const bubblegumContract = {
+  name: "Bubblegum",
+  address: "BGUMAp9Gq7iTEuizy4pqaxsTyUCBK68MDfK752saRPUY",
+};
+
 export const services: ServiceRaw[] = [];

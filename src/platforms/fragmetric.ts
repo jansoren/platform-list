@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "fragmetric",
   name: "Fragmetric",
@@ -20,4 +21,31 @@ export const platform: PlatformRaw = {
   ],
 };
 
-export const services: ServiceRaw[] = [];
+const contract = {
+  name: "Fragmetric",
+  address: "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+};
+
+const airdropContract = {
+  name: "Airdrop",
+  address: "fdropWhSi5xVKa9z26qKXveXoHDePDXfb5zxt3RKvKx",
+};
+
+const service: ServiceRaw = {
+  id: "fragmetric",
+  name: "Fragmetric",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+const airdropService: ServiceRaw = {
+  id: "fragmetric-airdrop",
+  name: "Fragmetric Airdrop",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [airdropContract],
+};
+
+export const services: ServiceRaw[] = [service, airdropService];
+export default services;

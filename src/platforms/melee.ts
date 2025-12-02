@@ -1,4 +1,6 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
+
 export const platform: PlatformRaw = {
   id: "melee",
   name: "Melee",
@@ -11,4 +13,19 @@ export const platform: PlatformRaw = {
     documentation: "https://melee-1.gitbook.io/melee-docs",
   },
 };
-export const services: ServiceRaw[] = [];
+
+const contract = {
+  name: "Prediction",
+  address: "HK4ai9cQNxF9Btu2aUXNiqGLKF88p3ep2cVEtYo7uK4m",
+};
+
+const service: ServiceRaw = {
+  id: `${platform.id}-prediction`,
+  name: "Prediction",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [contract],
+};
+
+export const services: ServiceRaw[] = [service];
+export default services;

@@ -1,4 +1,5 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { NetworkId } from "@sonarwatch/portfolio-core";
 export const platform: PlatformRaw = {
   id: "goosefx",
   name: "GooseFX",
@@ -16,4 +17,48 @@ export const platform: PlatformRaw = {
   isDeprecated: true,
 };
 
-export const services: ServiceRaw[] = [];
+const singleTokenPoolContract = {
+  name: "Single Token Pools",
+  address: "GFXsSL5sSaDfNFQUYsHekbWBW1TsFdjDYzACh62tEHxn",
+};
+
+const dualTokenPoolContract = {
+  name: "Dual Token Pools",
+  address: "GAMMA7meSFWaBXF25oSUgmGRwaW6sCMFLmBNiMSdbHVT",
+};
+
+const stakingContract = {
+  name: "Staking",
+  address: "STKRWxT4irmTthSJydggspWmkc3ovYHx62DHLPVv1f1",
+};
+
+const singleTokenPoolsService: ServiceRaw = {
+  id: `${platform.id}-single-pools`,
+  name: "Single Token Pools",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [singleTokenPoolContract],
+};
+
+const dualTokenPoolsService: ServiceRaw = {
+  id: `${platform.id}-dual-pools`,
+  name: "Dual Token Pools",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [dualTokenPoolContract],
+};
+
+const lpStakingService: ServiceRaw = {
+  id: `${platform.id}-staking`,
+  name: "Staking",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [stakingContract],
+};
+
+export const services: ServiceRaw[] = [
+  singleTokenPoolsService,
+  dualTokenPoolsService,
+  lpStakingService,
+];
+export default services;
