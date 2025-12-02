@@ -116,6 +116,14 @@ const swapPythService: ServiceRaw = {
   contractsRaw: [limitOrderContract, expressRelayContract],
 };
 
+const kaminoLiquidityService: ServiceRaw = {
+  id: `${platform.id}-liquidity`,
+  name: "Liquidity",
+  platformId: platform.id,
+  networkId: NetworkId.solana,
+  contractsRaw: [poolsContract, kaminoFarmContract],
+};
+
 const vaultLeverageService: ServiceRaw = {
   id: `${platform.id}-leverage`,
   name: "Leverage",
@@ -140,6 +148,7 @@ export const services: ServiceRaw[] = [
   swapService,
   swapJupiterService,
   swapPythService,
+  kaminoLiquidityService,
   vaultLeverageService,
   airdropService,
 ];
