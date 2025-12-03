@@ -202,29 +202,6 @@ export const services: ServiceRaw[] = [multiplyService];
 export default services;
 ```
 
-### Exporting Contracts for Reuse
-
-If your contracts are used by other platforms, you can export them:
-
-```typescript
-// In your platform file
-export const myContract = {
-  name: "My Contract",
-  address: "MyContractAddress",
-};
-
-// In another platform file
-import { myContract } from "./myplatform";
-
-const service: ServiceRaw = {
-  id: `${platform.id}-service`,
-  name: "Service",
-  platformId: platform.id,
-  networkId: NetworkId.solana,
-  contractsRaw: [myContract, otherContract],
-};
-```
-
 ## Global Rules
 
 Please follow these rules when contributing:
