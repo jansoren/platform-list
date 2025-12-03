@@ -1,4 +1,4 @@
-import { Platform, Service } from "./types";
+import { Contract, Platform, Service } from "./types";
 
 export async function fetchPlatforms(): Promise<Platform[]> {
   const response = await fetch(
@@ -19,5 +19,16 @@ export async function fetchServices(): Promise<Service[]> {
     throw new Error("Failed to fetch services");
   }
   const data: Service[] = await response.json();
+  return data;
+}
+
+export async function fetchContracts(): Promise<Contract[]> {
+  const response = await fetch(
+    "https://github.com/jup-ag/platform-list/releases/latest/download/contracts.json",
+  );
+  if (!response.ok) {
+    throw new Error("Failed to fetch contracts");
+  }
+  const data: Contract[] = await response.json();
   return data;
 }

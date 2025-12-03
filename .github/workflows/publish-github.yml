@@ -46,6 +46,9 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
-          files: dist/platforms.json
+          files: |
+            dist/platforms.json
+            dist/services.json
+            dist/contracts.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

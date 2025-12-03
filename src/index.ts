@@ -1,8 +1,8 @@
 import { platforms as platformsRaw } from "./platforms/index";
 import { services as servicesRaw } from "./platforms/index";
-import { Platform, Service } from "./types";
+import { Contract, Platform, Service } from "./types";
 
-export { Platform, Service } from "./types";
+export { Contract, Platform, Service } from "./types";
 export * from "./utils";
 
 const platforms: Platform[] = platformsRaw.map(
@@ -25,4 +25,8 @@ const services: Service[] = servicesRaw.map(
   }),
 );
 
-export { platforms, services };
+const contracts: Contract[] = services
+  .map((s): Contract[] => s.contracts)
+  .flat();
+
+export { platforms, services, contracts };
