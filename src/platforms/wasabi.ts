@@ -12,8 +12,6 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 
-import { jupiterV6Contract } from "./jupiter-exchange";
-
 const contract = {
   name: "Main",
   address: "spicyTHtbmarmUxwFSHYpA8G4uP2nRNq38RReMpoZ9c",
@@ -24,7 +22,7 @@ const tradeService: ServiceRaw = {
   id: `${platform.id}-trade`,
   name: "Trade",
   platformId: platform.id,
-  contractsRaw: [contract, jupiterV6Contract],
+  contractsRaw: [contract],
 };
 
 const earnService: ServiceRaw = {

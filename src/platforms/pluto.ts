@@ -15,8 +15,6 @@ export const platform: PlatformRaw = {
   },
 };
 
-import { jupiterV6Contract } from "./jupiter-exchange";
-
 const contract = {
   name: "Leverage Machine",
   address: "5UFYdXHgXLMsDzHyv6pQW9zv3fNkRSNqHwhR7UPnkhzy",
@@ -33,14 +31,14 @@ const withJupiterSwapService: ServiceRaw = {
   id: `${platform.id}-leverage-with-jupiter-swap`,
   name: "Leverage",
   platformId: platform.id,
-  contractsRaw: [contract, jupiterV6Contract],
+  contractsRaw: [contract],
 };
 
 const v2WithJupiterSwapService: ServiceRaw = {
   id: `${platform.id}-leverage-v2-with-jupiter-swap`,
   name: "Leverage",
   platformId: platform.id,
-  contractsRaw: [contractV2, jupiterV6Contract],
+  contractsRaw: [contractV2],
 };
 
 export const services: ServiceRaw[] = [

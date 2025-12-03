@@ -8,9 +8,6 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "memecoin"],
 };
 
-import { jupiterV6Contract } from "./jupiter-exchange";
-import { saveContract } from "./save";
-
 const lendingContract = {
   name: "Short Lending",
   address: "3JmCcXAjmBpFzHHuUpgJFfTQEQnAR7K1erNLtWV1g7d9",
@@ -21,7 +18,7 @@ const lendingService: ServiceRaw = {
   id: `${platform.id}-short-lending`,
   name: "Short Lending",
   platformId: platform.id,
-  contractsRaw: [lendingContract, jupiterV6Contract, saveContract],
+  contractsRaw: [lendingContract],
 };
 
 export const services: ServiceRaw[] = [lendingService];

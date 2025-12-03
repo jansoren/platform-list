@@ -15,7 +15,6 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 
-import { jupiterV6Contract } from "./jupiter-exchange";
 import { contract } from "./dflow";
 import { expressRelayContract } from "./pyth";
 
@@ -85,7 +84,7 @@ const kaminoMultiplyService: ServiceRaw = {
   id: `${platform.id}-multiply`,
   name: "Multiply",
   platformId: platform.id,
-  contractsRaw: [kaminoLendContract, jupiterV6Contract],
+  contractsRaw: [kaminoLendContract],
 };
 
 const kaminoLimitOrderService: ServiceRaw = {
@@ -106,7 +105,7 @@ const swapJupiterService: ServiceRaw = {
   id: `${platform.id}-swap-jupiter`,
   name: "Swap",
   platformId: platform.id,
-  contractsRaw: [limitOrderContract, jupiterV6Contract],
+  contractsRaw: [limitOrderContract],
 };
 
 const swapPythService: ServiceRaw = {

@@ -13,8 +13,6 @@ export const platform: PlatformRaw = {
   tags: ["bridge", "tool", "dapp"],
 };
 
-import { jupiterV6Contract } from "./jupiter-exchange";
-
 const contract = {
   name: "Swift",
   address: "BLZRi6frs4X4DNLw56V4EXai1b6QVESN1BhHBTYM9VcY",
@@ -32,7 +30,7 @@ const bridgeService: ServiceRaw = {
   id: `${platform.id}-bridge`,
   name: "Bridge",
   platformId: platform.id,
-  contractsRaw: [contract, jupiterV6Contract],
+  contractsRaw: [contract],
 };
 
 export const services: ServiceRaw[] = [claimService, bridgeService];

@@ -17,6 +17,12 @@ const lfgContract = {
   networkId: NetworkId.solana,
 };
 
+const dtfContract = {
+  name: "DTF",
+  address: "presSVxnf9UU8jMxhgSMqaRwNiT36qeBdNeTRKjTdbj",
+  networkId: NetworkId.solana,
+};
+
 const lfgService: ServiceRaw = {
   id: `${platform.id}-lfg`,
   name: "LFG",

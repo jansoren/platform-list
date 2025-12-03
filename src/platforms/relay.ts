@@ -10,8 +10,6 @@ export const platform: PlatformRaw = {
   tags: ["dapp", "bridge"],
 };
 
-import { jupiterV6Contract } from "./jupiter-exchange";
-
 const contract = {
   name: "WSOL Unwrapper",
   address: "DzACDmwdqc5ADPJKnZEcQAgpsPdvYzvYBMihPNN48pFE",
@@ -28,7 +26,7 @@ const service: ServiceRaw = {
   id: `${platform.id}-bridge`,
   name: "Bridge",
   platformId: platform.id,
-  contractsRaw: [contract, jupiterV6Contract],
+  contractsRaw: [contract],
 };
 
 const relayService: ServiceRaw = {
