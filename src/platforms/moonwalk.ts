@@ -17,11 +17,6 @@ const main: ContractRaw = {
   address: "FitAFk15vtx2PBjfr7QTnefaHRx6HwajRiZMt1DdSSKU",
   networkId: NetworkId.solana,
 };
-const airdrop: ContractRaw = {
-  name: "Airdrop",
-  address: "FitAFk15vtx2PBjfr7QTnefaHRx6HwajRiZMt1DdSSKU",
-  networkId: NetworkId.solana,
-};
 
 const gameService: ServiceRaw = {
   id: `${platform.id}-game`,
@@ -30,11 +25,4 @@ const gameService: ServiceRaw = {
   contractsRaw: [main],
 };
 
-const airdropService: ServiceRaw = {
-  id: `${platform.id}-airdrop`,
-  name: "Airdrop",
-  platformId: platform.id,
-  contractsRaw: [airdrop],
-};
-
-export const services: ServiceRaw[] = [gameService, airdropService];
+export const services: ServiceRaw[] = [gameService];

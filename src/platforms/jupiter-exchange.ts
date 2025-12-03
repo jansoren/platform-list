@@ -175,7 +175,7 @@ const apeService: ServiceRaw = {
   id: `${platform.id}-ape`,
   name: "Ape",
   platformId: platform.id,
-  contractsRaw: [apeContract, jupiterV6Contract],
+  contractsRaw: [apeContract],
 };
 
 const jupiterZService: ServiceRaw = {
@@ -199,22 +199,15 @@ const limitService: ServiceRaw = {
   contractsRaw: [jupiterLimitContract],
 };
 
-const dcaSwapService: ServiceRaw = {
-  id: `${platform.id}-dca-swap`,
-  name: "DCA",
-  platformId: platform.id,
-  contractsRaw: [jupiterDcaContract, jupiterV6Contract],
-};
-
-const dcaDepositService: ServiceRaw = {
-  id: `${platform.id}-dca-deposit`,
+const dcaService: ServiceRaw = {
+  id: `${platform.id}-dca`,
   name: "DCA",
   platformId: platform.id,
   contractsRaw: [jupiterDcaContract],
 };
 
 const dcaVaService: ServiceRaw = {
-  id: `${platform.id}-dcava`,
+  id: `${platform.id}-dca-va`,
   name: "DCA VA",
   platformId: platform.id,
   contractsRaw: [jupiterDcaVaContract],
@@ -260,8 +253,7 @@ export const services: ServiceRaw[] = [
   jupiterZService,
   limitV1Service,
   limitService,
-  dcaSwapService,
-  dcaDepositService,
+  dcaService,
   dcaVaService,
   lockService,
   perpsService,

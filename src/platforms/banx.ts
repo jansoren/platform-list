@@ -16,13 +16,13 @@ export const platform: PlatformRaw = {
   tokens: ["BANXbTpN8U2cU41FjPxe2Ti37PiT5cCxLUKDQZuJeMMR"],
 };
 
-const banxContract = {
+const bondsContract = {
   name: "Banx Bonds",
   address: "4tdmkuY6EStxbS6Y8s5ueznL3VPMSugrvQuDeAHGZhSt",
   networkId: NetworkId.solana,
 };
 
-const banxVaultsContract = {
+const vaultsContract = {
   name: "Vaults",
   address: "BanxxEcFZPJLKhS59EkwTa8SZez8vDYTiJVN78mGHWDi",
   networkId: NetworkId.solana,
@@ -38,14 +38,14 @@ const bondsService: ServiceRaw = {
   id: "banx-bonds",
   name: "Bonds",
   platformId: platform.id,
-  contractsRaw: [banxContract],
+  contractsRaw: [bondsContract],
 };
 
 const vaultsService: ServiceRaw = {
   id: "banx-vaults",
   name: "Vaults",
   platformId: platform.id,
-  contractsRaw: [banxVaultsContract, banxContract],
+  contractsRaw: [vaultsContract],
 };
 
 const airdropService: ServiceRaw = {

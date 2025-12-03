@@ -16,12 +16,6 @@ export const platform: PlatformRaw = {
   tokens: ["CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu"],
 };
 
-const poolContract = {
-  name: "Infinity Pool",
-  address: "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
-  networkId: NetworkId.solana,
-};
-
 const infContract = {
   name: "Infinity",
   address: "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
@@ -70,7 +64,7 @@ const poolService: ServiceRaw = {
   id: `${platform.id}-pool`,
   name: "Infinity Pool",
   platformId: platform.id,
-  contractsRaw: [poolContract],
+  contractsRaw: [infContract],
 };
 
 const routerService: ServiceRaw = {
@@ -78,13 +72,6 @@ const routerService: ServiceRaw = {
   name: "Router",
   platformId: platform.id,
   contractsRaw: [routerContract],
-};
-
-const tradeService: ServiceRaw = {
-  id: `${platform.id}-trade`,
-  name: "Trade",
-  platformId: platform.id,
-  contractsRaw: [infContract],
 };
 
 const asrService: ServiceRaw = {
@@ -99,6 +86,5 @@ export const services: ServiceRaw[] = [
   stakingService,
   poolService,
   routerService,
-  tradeService,
   asrService,
 ];
