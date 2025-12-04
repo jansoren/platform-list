@@ -33,7 +33,7 @@
     "test": "jest",
     "test:ci": "jest",
     "test:watch": "jest --watch",
-    "lint": "prettier --check .",
+    "lint": "prettier --check . && tsc --noEmit",
     "format": "prettier --write .",
     "preversion": "npm run build:index && npm run test:ci && npm run build:ci && npm run format && (npm run commit:index || true)"
   },
