@@ -92,4 +92,18 @@ describe("Services", () => {
       );
     }
   });
+
+  it("should have service ids in the format platformId-xxx", () => {
+    const invalidServiceIds = services.filter(
+      (service) => !service.id.startsWith(`${service.platformId}-`),
+    );
+
+    if (invalidServiceIds.length > 0) {
+      throw new Error(
+        `Service IDs should be in format platformId-xxx. Invalid services: ${invalidServiceIds
+          .map((s) => s.id)
+          .join(", ")}`,
+      );
+    }
+  });
 });
