@@ -220,6 +220,7 @@ import * as symmetry from "./symmetry";
 import * as tensor from "./tensor";
 import * as texture from "./texture";
 import * as thevault from "./thevault";
+import * as tiplink from "./tiplink";
 import * as titan from "./titan";
 import * as triad from "./triad";
 import * as tribeca from "./tribeca";
@@ -462,6 +463,7 @@ export const platforms: PlatformRaw[] = [
   tensor.platform,
   texture.platform,
   thevault.platform,
+  tiplink.platform,
   titan.platform,
   triad.platform,
   tribeca.platform,
@@ -705,6 +707,7 @@ export const services: ServiceRaw[] = [
   ...tensor.services,
   ...texture.services,
   ...thevault.services,
+  ...tiplink.services,
   ...titan.services,
   ...triad.services,
   ...tribeca.services,

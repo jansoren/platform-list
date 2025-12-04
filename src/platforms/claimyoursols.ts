@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
 };
 
 export const closeTokenAccountService: ServiceRaw = {
-  id: `${platform.id}`,
+  id: `${platform.id}-close-token-account`,
   name: "Close Token Account",
   platformId: platform.id,
   contractsRaw: [],

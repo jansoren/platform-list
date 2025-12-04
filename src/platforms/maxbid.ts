@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
 };
 export const tradeService: ServiceRaw = {
-  id: `${platform.id}`,
+  id: `${platform.id}-trade`,
   name: "Trade",
   platformId: platform.id,
   contractsRaw: [],
