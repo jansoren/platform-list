@@ -16,7 +16,7 @@ const contract = {
 };
 
 export const service: ServiceRaw = {
-  id: "domin8",
+  id: "domin8-game",
   name: "Game",
   platformId: platform.id,
   contractsRaw: [contract],
