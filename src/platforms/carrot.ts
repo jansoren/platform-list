@@ -11,7 +11,12 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/carrot",
     documentation: "https://docs.deficarrot.com/",
   },
-  tokens: ["CRTx1JouZhzSU6XytsE42UQraoGqiHgxabocVfARTy2s"],
+  tokens: [
+    "CRTx1JouZhzSU6XytsE42UQraoGqiHgxabocVfARTy2s",
+    "uWmCyJDELc3PyG5JQpRbA4UVa3ra2jRsk8wkdSTEz6W",
+    "BxEHFUpAD9ffHPSPom1h4CAydRX5rwNBD5NVA1vfTqbn",
+    "BXEjfmuDGSJxvUGqw1tdSnvpQYuMUGVgxYZLjUWPUcB9",
+  ],
   tags: ["stablecoin", "dapp"],
 };
 

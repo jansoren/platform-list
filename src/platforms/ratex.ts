@@ -14,6 +14,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.rate-x.io/ratex",
   },
   tags: ["dapp"],
+  tokens: ["J1wnHdKvP34fg7TtYdX63UPJMTdXNzJGEqfNJB22vKjU"],
 };
 
 // lookupAddressTable Es56bH1dokFwohpWS8XYSfTXavvSEuyob2FnUYzF6pCL
