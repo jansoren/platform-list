@@ -201,6 +201,20 @@ export const gaslessSwapService: ServiceRaw = {
     "Gasless swaps allow users to perform token swaps without needing to hold SOL for transaction fees, as the platform covers these costs on behalf of the user.",
 };
 
+export const ultraSwapService: ServiceRaw = {
+  id: `${platform.id}-ultra-swap`,
+  name: "Ultra Swap",
+  platformId: platform.id,
+  contractsRaw: [],
+};
+
+export const manualSwapService: ServiceRaw = {
+  id: `${platform.id}-manual-swap`,
+  name: "Manual Swap",
+  platformId: platform.id,
+  contractsRaw: [],
+};
+
 export const apeService: ServiceRaw = {
   id: `${platform.id}-ape`,
   name: "Ape",
@@ -335,6 +349,8 @@ export const services: ServiceRaw[] = [
   swapV2Service,
   swapV1Service,
   gaslessSwapService,
+  ultraSwapService,
+  manualSwapService,
   apeService,
   jupiterZService,
   limitV2Service,
