@@ -93,6 +93,7 @@ import * as goosefx from "./goosefx";
 import * as gpool from "./gpool";
 import * as graphite from "./graphite";
 import * as grass from "./grass";
+import * as growcorp from "./growcorp";
 import * as guano from "./guano";
 import * as hadeswap from "./hadeswap";
 import * as hastra from "./hastra";
@@ -362,6 +363,7 @@ export const platforms: PlatformRaw[] = [
   gpool.platform,
   graphite.platform,
   grass.platform,
+  growcorp.platform,
   guano.platform,
   hadeswap.platform,
   hastra.platform,
@@ -632,6 +634,7 @@ export const services: ServiceRaw[] = [
   ...gpool.services,
   ...graphite.services,
   ...grass.services,
+  ...growcorp.services,
   ...guano.services,
   ...hadeswap.services,
   ...hastra.services,
