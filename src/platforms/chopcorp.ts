@@ -2,8 +2,7 @@ import { PlatformRaw, ServiceRaw, NetworkId } from "../types";
 export const platform: PlatformRaw = {
   id: "chopcorp",
   name: "Chopcorp",
-  description:
-    "LOG is a digital commodity on the Solana blockchain.",
+  description: "LOG is a digital commodity on the Solana blockchain.",
   tags: ["tool"],
   links: {
     website: "https://chopcorp.io/",
