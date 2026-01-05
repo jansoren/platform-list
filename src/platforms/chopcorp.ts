@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/Chopcorpsol",
     documentation: "https://chopcorp.io/about",
   },
-  tokens: ["chopmfFa3T1CzZj9WUgq5e18aMvjufSHGfPTvyKkydL"],
+  tokens: ["1ogCsoK7ZqZwiYam9i7xq2j6Bf2LizT6iQtGSp6vCoT"],
 };
 
 const v3Contract = {
