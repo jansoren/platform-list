@@ -42,10 +42,10 @@ We welcome contributions from the community! If you want to add a new platform, 
 
 1. Fork the repository
 2. Create a platform file in `src/platforms/yourplatform.ts`
-3. Add a 64x64 `.webp` image in `img/yourplatform.webp`
+3. Add a 400x400 `.webp` image in `img/yourplatform.webp`
 4. Follow the rules:
    - Platform IDs must be lowercase
-   - Images must be `.webp` format, 64x64 pixels
+   - Images must be `.webp` format, 400x400 pixels
 5. Submit a Pull Request
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions and examples.

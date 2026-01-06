@@ -6,6 +6,7 @@ export const platform: PlatformRaw = {
   isDeprecated: true,
   links: {
     website: "https://projectserum.com/",
+    twitter: "https://x.com/projectserum"
   },
   tags: ["dapp"],
   tokens: ["SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt"],

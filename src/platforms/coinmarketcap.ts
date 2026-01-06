@@ -4,6 +4,7 @@ export const platform: PlatformRaw = {
   name: "CoinMarketCap",
   links: {
     website: "https://coinmarketcap.com/",
+    twitter: "https://x.com/CoinMarketCap"
   },
   tags: ["tool"],
 };

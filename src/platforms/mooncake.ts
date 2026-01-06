@@ -8,6 +8,7 @@ export const platform: PlatformRaw = {
   links: {
     website: "https://app.mooncake.fi/",
     documentation: "https://docs.mooncake.fi/",
+    twitter: "https://x.com/mooncake_fi",
   },
   tags: ["dapp"],
 };

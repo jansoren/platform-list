@@ -5,6 +5,7 @@ export const platform: PlatformRaw = {
   isDeprecated: true,
   links: {
     website: "https://yield.fan/dashboard",
+    twitter: "https://x.com/yieldfan"
   },
   tags: ["dapp"],
 };

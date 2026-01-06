@@ -8,6 +8,7 @@ export const platform: PlatformRaw = {
   links: {
     website: "https://swap.pump.fun/",
     telegram: "https://t.me/pumpfunsupport",
+    twitter: "https://x.com/pumpdotfun",
   },
 };
 

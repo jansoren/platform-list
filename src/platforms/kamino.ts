@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
   links: {
     website: "https://kamino.finance/",
     discord: "https://discord.com/invite/kaminofinance",
-    twitter: "https://x.com/KaminoFinance",
+    twitter: "https://x.com/kamino",
     github: "https://github.com/Kamino-Finance",
     documentation: "https://docs.kamino.finance/",
   },
