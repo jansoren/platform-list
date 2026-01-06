@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.gg/6UZHcNJFr8",
     github: "https://github.com/Mythic-Project",
     documentation: "https://docs.realms.today/",
-    twitter: "https://x.com/RealmsDAOs"
+    twitter: "https://x.com/RealmsDAOs",
   },
   tags: ["dao", "tool", "dapp"],
 };

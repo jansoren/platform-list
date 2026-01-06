@@ -7,7 +7,7 @@ export const platform: PlatformRaw = {
   tags: ["dapp"],
   links: {
     website: "https://saberdao.io/",
-    twitter: "https://x.com/thesaberdao"
+    twitter: "https://x.com/thesaberdao",
   },
   tokens: ["Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1"],
 };

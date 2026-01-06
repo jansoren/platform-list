@@ -8,7 +8,7 @@ import sharp from "sharp";
  * converts them to 400x400 WebP format, and performs a final validation
  * of all images in the img/ directory.
  */
-const IMG_TARGET_SIZE = 400
+const IMG_TARGET_SIZE = 400;
 
 async function downloadAndConvertImages() {
   const imgDir = join(__dirname, "../img");
@@ -29,7 +29,10 @@ async function downloadAndConvertImages() {
     if (existsSync(outputPath)) {
       try {
         const metadata = await sharp(outputPath).metadata();
-        if (metadata.width === IMG_TARGET_SIZE && metadata.height === IMG_TARGET_SIZE) {
+        if (
+          metadata.width === IMG_TARGET_SIZE &&
+          metadata.height === IMG_TARGET_SIZE
+        ) {
           // console.log(`[Skip] ${p.id} (already ${IMG_TARGET_SIZE}x${IMG_TARGET_SIZE})`);
           continue;
         }
@@ -40,7 +43,8 @@ async function downloadAndConvertImages() {
 
     try {
       const response = await fetch(imageUrl);
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      if (!response.ok)
+        throw new Error(`HTTP error! status: ${response.status}`);
 
       const buffer = await response.arrayBuffer();
 
@@ -51,7 +55,10 @@ async function downloadAndConvertImages() {
 
       console.log(`[Done] ${p.id} saved to img/${p.id}.webp`);
     } catch (error) {
-      console.error(`[Error] Failed to process ${p.id} (${handle}):`, error instanceof Error ? error.message : error);
+      console.error(
+        `[Error] Failed to process ${p.id} (${handle}):`,
+        error instanceof Error ? error.message : error,
+      );
     }
   }
 
@@ -64,8 +71,13 @@ async function downloadAndConvertImages() {
     const filePath = join(imgDir, file);
     try {
       const metadata = await sharp(filePath).metadata();
-      if (metadata.width !== IMG_TARGET_SIZE || metadata.height !== IMG_TARGET_SIZE) {
-        console.error(`[Invalid Size] ${file}: ${metadata.width}x${metadata.height}`);
+      if (
+        metadata.width !== IMG_TARGET_SIZE ||
+        metadata.height !== IMG_TARGET_SIZE
+      ) {
+        console.error(
+          `[Invalid Size] ${file}: ${metadata.width}x${metadata.height}`,
+        );
         invalidCount++;
       }
     } catch (e) {

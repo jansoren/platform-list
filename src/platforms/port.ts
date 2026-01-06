@@ -8,7 +8,7 @@ export const platform: PlatformRaw = {
   links: {
     website: "https://mainnet.port.finance/lending",
     github: "https://github.com/port-finance",
-    twitter: "https://x.com/port_finance"
+    twitter: "https://x.com/port_finance",
   },
   tokens: ["PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y"],
 };

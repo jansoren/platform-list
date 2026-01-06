@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     telegram: "https://t.me/raydiumprotocol",
     github: "https://github.com/raydium-io",
     documentation: "https://docs.raydium.io/raydium/",
-    twitter: "https://x.com/Raydium"
+    twitter: "https://x.com/Raydium",
   },
   tokens: ["4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"],
   tags: ["dapp"],
