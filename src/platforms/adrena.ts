@@ -17,6 +17,7 @@ export const platform: PlatformRaw = {
     "AuQaustGiaqxRvj2gtCdrd22PBzTn8kM3kEPEkZCtuDw",
     "4yCLi5yWGzpTWMQ1iWHG5CrGYAdBkhyEdsuSugjDUqwj",
   ],
+  isDeprecated: true,
 };
 
 const contract = {
