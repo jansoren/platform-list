@@ -18,7 +18,7 @@ export const platform: PlatformRaw = {
     "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
     "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
   ],
-  tags: ["dapp"],
+  tags: ["dapp", "lending", "trading"],
 };
 
 export const jupiterV7Contract: ContractRaw = {

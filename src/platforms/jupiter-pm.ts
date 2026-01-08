@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     twitter: "https://twitter.com/JupiterExchange",
     github: "https://github.com/jup-ag",
   },
-  tags: ["dapp"],
+  tags: ["dapp", "prediction"],
 };
 
 const contract = {
