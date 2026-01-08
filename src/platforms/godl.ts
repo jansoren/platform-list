@@ -12,6 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://www.godl.supply/about",
   },
   tokens: ["GodL6KZ9uuUoQwELggtVzQkKmU1LfqmDokPibPeDKkhF"],
+  addedAt: 1764244800000,
 };
 
 const v3Contract = {

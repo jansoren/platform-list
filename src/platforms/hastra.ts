@@ -9,6 +9,7 @@ export const platform: PlatformRaw = {
     website: "https://www.hastra.io/",
     twitter: "https://x.com/HastraFi",
   },
+  addedAt: 1764936000000,
 };
 
 const mintContract = {

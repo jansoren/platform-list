@@ -13,6 +13,7 @@ export const platform: PlatformRaw = {
     "soLvpPEDkN8D1Wgjezrb1oj4WjGtj17vynGm6t3jah6",
     "SoLvHDFVstC74Jr9eNLTDoG4goSUsn1RENmjNtFKZvW",
   ],
+  addedAt: 1764158400000,
 };
 
 export const contract = {

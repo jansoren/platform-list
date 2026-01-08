@@ -11,6 +11,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/nearprotocol",
   },
   tags: ["bridge", "dapp"],
+  addedAt: 1763380800000,
 };
 const bridge: ContractRaw = {
   name: `Bridge`,

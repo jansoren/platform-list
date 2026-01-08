@@ -12,6 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://zorb.supply/about",
   },
   tokens: ["orebyr4mDiPDVgnfqvF5xiu5gKnh94Szuz8dqgNqdJn"],
+  addedAt: 1764072000000,
 };
 
 const v3Contract = {

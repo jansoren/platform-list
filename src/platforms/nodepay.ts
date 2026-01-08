@@ -11,6 +11,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/nodepay",
     telegram: "https://t.me/nodepaycommunitychat",
   },
+  addedAt: 1761912000000,
 };
 
 const stakingContract = {

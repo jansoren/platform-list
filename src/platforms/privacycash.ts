@@ -9,6 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/theprivacycash",
   },
   tags: ["dapp"],
+  addedAt: 1761652800000,
 };
 
 const contract = {

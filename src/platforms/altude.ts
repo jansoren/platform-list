@@ -9,6 +9,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/altudeso",
     github: "https://github.com/AltudePlatform",
   },
+  addedAt: 1765108800000,
 };
 
 export const services: ServiceRaw[] = [];

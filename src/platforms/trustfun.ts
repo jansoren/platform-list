@@ -11,6 +11,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/trustfun_xyz",
   },
   tags: ["launchpad", "memecoin", "dapp"],
+  addedAt: 1765454400000,
 };
 
 export const services: ServiceRaw[] = [];

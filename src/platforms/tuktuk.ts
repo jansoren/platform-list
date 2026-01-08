@@ -9,6 +9,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/helium/tuktuk",
   },
   tags: ["tool"],
+  addedAt: 1764244800000,
 };
 
 const contract = {

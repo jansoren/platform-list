@@ -12,6 +12,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/1inch",
     documentation: "https://docs.1inch.io/",
   },
+  addedAt: 1763726400000,
 };
 
 const sourceContract = {
