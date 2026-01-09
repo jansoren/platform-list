@@ -83,6 +83,7 @@ import * as fragmetric from "./fragmetric";
 import * as francium from "./francium";
 import * as frax from "./frax";
 import * as friktion from "./friktion";
+import * as fuse from "./fuse";
 import * as futarchy from "./futarchy";
 import * as gary from "./gary";
 import * as gauntlet from "./gauntlet";
@@ -217,6 +218,7 @@ import * as raydium from "./raydium";
 import * as realms from "./realms";
 import * as reflect from "./reflect";
 import * as relay from "./relay";
+import * as remora from "./remora";
 import * as renzo from "./renzo";
 import * as runemine from "./runemine";
 import * as saber from "./saber";
@@ -365,6 +367,7 @@ export const platforms: PlatformRaw[] = [
   francium.platform,
   frax.platform,
   friktion.platform,
+  fuse.platform,
   futarchy.platform,
   gary.platform,
   gauntlet.platform,
@@ -499,6 +502,7 @@ export const platforms: PlatformRaw[] = [
   realms.platform,
   reflect.platform,
   relay.platform,
+  remora.platform,
   renzo.platform,
   runemine.platform,
   saber.platform,
@@ -648,6 +652,7 @@ export const services: ServiceRaw[] = [
   ...francium.services,
   ...frax.services,
   ...friktion.services,
+  ...fuse.services,
   ...futarchy.services,
   ...gary.services,
   ...gauntlet.services,
@@ -782,6 +787,7 @@ export const services: ServiceRaw[] = [
   ...realms.services,
   ...reflect.services,
   ...relay.services,
+  ...remora.services,
   ...renzo.services,
   ...runemine.services,
   ...saber.services,
