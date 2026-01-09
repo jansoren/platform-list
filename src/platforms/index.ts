@@ -7,6 +7,7 @@ import * as _1inch from "./1inch";
 import * as accessprotocol from "./accessprotocol";
 import * as adrastea from "./adrastea";
 import * as adrena from "./adrena";
+import * as agora from "./agora";
 import * as akuma from "./akuma";
 import * as aldrin from "./aldrin";
 import * as allbridge from "./allbridge";
@@ -18,6 +19,7 @@ import * as artrade from "./artrade";
 import * as asgardfi from "./asgardfi";
 import * as atrix from "./atrix";
 import * as aurory from "./aurory";
+import * as backedfinance from "./backedfinance";
 import * as backpack from "./backpack";
 import * as backwoods from "./backwoods";
 import * as bananagun from "./bananagun";
@@ -26,6 +28,7 @@ import * as banx from "./banx";
 import * as baskt from "./baskt";
 import * as believe from "./believe";
 import * as bio from "./bio";
+import * as bitgo from "./bitgo";
 import * as blaze from "./blaze";
 import * as bloom from "./bloom";
 import * as blueshift from "./blueshift";
@@ -74,6 +77,7 @@ import * as ensofi from "./ensofi";
 import * as exoticmarkets from "./exoticmarkets";
 import * as exponent from "./exponent";
 import * as famousfoxfederation from "./famousfoxfederation";
+import * as fdl from "./fdl";
 import * as fjordfoundry from "./fjordfoundry";
 import * as flash from "./flash";
 import * as flexlend from "./flexlend";
@@ -81,6 +85,7 @@ import * as flowmatic from "./flowmatic";
 import * as fluxbeam from "./fluxbeam";
 import * as fragmetric from "./fragmetric";
 import * as francium from "./francium";
+import * as franklintempleton from "./franklintempleton";
 import * as frax from "./frax";
 import * as friktion from "./friktion";
 import * as fuse from "./fuse";
@@ -122,6 +127,7 @@ import * as iloop from "./iloop";
 import * as invariant from "./invariant";
 import * as jet from "./jet";
 import * as jito from "./jito";
+import * as jpmorgan from "./jpmorgan";
 import * as jupiterExchange from "./jupiter-exchange";
 import * as jupiterGovernance from "./jupiter-governance";
 import * as jupiterJupuary from "./jupiter-jupuary";
@@ -188,6 +194,7 @@ import * as pancakeswap from "./pancakeswap";
 import * as paraswap from "./paraswap";
 import * as parcl from "./parcl";
 import * as parrot from "./parrot";
+import * as paxos from "./paxos";
 import * as perena from "./perena";
 import * as phantom from "./phantom";
 import * as phoenix from "./phoenix";
@@ -225,10 +232,13 @@ import * as saber from "./saber";
 import * as sanctum from "./sanctum";
 import * as sandglass from "./sandglass";
 import * as save from "./save";
+import * as securitize from "./securitize";
 import * as sendit from "./sendit";
 import * as sentre from "./sentre";
 import * as serum from "./serum";
+import * as sgforge from "./sgforge";
 import * as sharky from "./sharky";
+import * as sky from "./sky";
 import * as smb from "./smb";
 import * as solana from "./solana";
 import * as solanaid from "./solanaid";
@@ -291,6 +301,7 @@ export const platforms: PlatformRaw[] = [
   accessprotocol.platform,
   adrastea.platform,
   adrena.platform,
+  agora.platform,
   akuma.platform,
   aldrin.platform,
   allbridge.platform,
@@ -302,6 +313,7 @@ export const platforms: PlatformRaw[] = [
   asgardfi.platform,
   atrix.platform,
   aurory.platform,
+  backedfinance.platform,
   backpack.platform,
   backwoods.platform,
   bananagun.platform,
@@ -310,6 +322,7 @@ export const platforms: PlatformRaw[] = [
   baskt.platform,
   believe.platform,
   bio.platform,
+  bitgo.platform,
   blaze.platform,
   bloom.platform,
   blueshift.platform,
@@ -358,6 +371,7 @@ export const platforms: PlatformRaw[] = [
   exoticmarkets.platform,
   exponent.platform,
   famousfoxfederation.platform,
+  fdl.platform,
   fjordfoundry.platform,
   flash.platform,
   flexlend.platform,
@@ -365,6 +379,7 @@ export const platforms: PlatformRaw[] = [
   fluxbeam.platform,
   fragmetric.platform,
   francium.platform,
+  franklintempleton.platform,
   frax.platform,
   friktion.platform,
   fuse.platform,
@@ -406,6 +421,7 @@ export const platforms: PlatformRaw[] = [
   invariant.platform,
   jet.platform,
   jito.platform,
+  jpmorgan.platform,
   jupiterExchange.platform,
   jupiterGovernance.platform,
   jupiterJupuary.platform,
@@ -472,6 +488,7 @@ export const platforms: PlatformRaw[] = [
   paraswap.platform,
   parcl.platform,
   parrot.platform,
+  paxos.platform,
   perena.platform,
   phantom.platform,
   phoenix.platform,
@@ -509,10 +526,13 @@ export const platforms: PlatformRaw[] = [
   sanctum.platform,
   sandglass.platform,
   save.platform,
+  securitize.platform,
   sendit.platform,
   sentre.platform,
   serum.platform,
+  sgforge.platform,
   sharky.platform,
+  sky.platform,
   smb.platform,
   solana.platform,
   solanaid.platform,
@@ -576,6 +596,7 @@ export const services: ServiceRaw[] = [
   ...accessprotocol.services,
   ...adrastea.services,
   ...adrena.services,
+  ...agora.services,
   ...akuma.services,
   ...aldrin.services,
   ...allbridge.services,
@@ -587,6 +608,7 @@ export const services: ServiceRaw[] = [
   ...asgardfi.services,
   ...atrix.services,
   ...aurory.services,
+  ...backedfinance.services,
   ...backpack.services,
   ...backwoods.services,
   ...bananagun.services,
@@ -595,6 +617,7 @@ export const services: ServiceRaw[] = [
   ...baskt.services,
   ...believe.services,
   ...bio.services,
+  ...bitgo.services,
   ...blaze.services,
   ...bloom.services,
   ...blueshift.services,
@@ -643,6 +666,7 @@ export const services: ServiceRaw[] = [
   ...exoticmarkets.services,
   ...exponent.services,
   ...famousfoxfederation.services,
+  ...fdl.services,
   ...fjordfoundry.services,
   ...flash.services,
   ...flexlend.services,
@@ -650,6 +674,7 @@ export const services: ServiceRaw[] = [
   ...fluxbeam.services,
   ...fragmetric.services,
   ...francium.services,
+  ...franklintempleton.services,
   ...frax.services,
   ...friktion.services,
   ...fuse.services,
@@ -691,6 +716,7 @@ export const services: ServiceRaw[] = [
   ...invariant.services,
   ...jet.services,
   ...jito.services,
+  ...jpmorgan.services,
   ...jupiterExchange.services,
   ...jupiterGovernance.services,
   ...jupiterJupuary.services,
@@ -757,6 +783,7 @@ export const services: ServiceRaw[] = [
   ...paraswap.services,
   ...parcl.services,
   ...parrot.services,
+  ...paxos.services,
   ...perena.services,
   ...phantom.services,
   ...phoenix.services,
@@ -794,10 +821,13 @@ export const services: ServiceRaw[] = [
   ...sanctum.services,
   ...sandglass.services,
   ...save.services,
+  ...securitize.services,
   ...sendit.services,
   ...sentre.services,
   ...serum.services,
+  ...sgforge.services,
   ...sharky.services,
+  ...sky.services,
   ...smb.services,
   ...solana.services,
   ...solanaid.services,
