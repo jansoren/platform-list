@@ -275,6 +275,7 @@ import * as titan from "./titan";
 import * as trepa from "./trepa";
 import * as triad from "./triad";
 import * as tribeca from "./tribeca";
+import * as trojan from "./trojan";
 import * as trustfun from "./trustfun";
 import * as tuktuk from "./tuktuk";
 import * as tulip from "./tulip";
@@ -572,6 +573,7 @@ export const platforms: PlatformRaw[] = [
   trepa.platform,
   triad.platform,
   tribeca.platform,
+  trojan.platform,
   trustfun.platform,
   tuktuk.platform,
   tulip.platform,
@@ -870,6 +872,7 @@ export const services: ServiceRaw[] = [
   ...trepa.services,
   ...triad.services,
   ...tribeca.services,
+  ...trojan.services,
   ...trustfun.services,
   ...tuktuk.services,
   ...tulip.services,
