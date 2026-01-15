@@ -13,9 +13,7 @@ export const platform: PlatformRaw = {
   },
   tags: ["dapp"],
   platformToken: "LABSh5DTebUcUbEoLzXKCiXFJLecDFiDWiBGUU1GpxR",
-  tokens: [
-    "7B2tQy8DwYt6aXHzt6UVDuqBB6WmykyZQodLSReQ9Wcz",
-  ],
+  tokens: ["7B2tQy8DwYt6aXHzt6UVDuqBB6WmykyZQodLSReQ9Wcz"],
 };
 
 const stakingContract = {
