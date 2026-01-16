@@ -38,6 +38,7 @@ import * as bloom from "./bloom";
 import * as blueshift from "./blueshift";
 import * as bonfida from "./bonfida";
 import * as bonkbot from "./bonkbot";
+import * as bonkfun from "./bonkfun";
 import * as bonkrewards from "./bonkrewards";
 import * as boop from "./boop";
 import * as bouncebit from "./bouncebit";
@@ -346,6 +347,7 @@ export const platforms: PlatformRaw[] = [
   blueshift.platform,
   bonfida.platform,
   bonkbot.platform,
+  bonkfun.platform,
   bonkrewards.platform,
   boop.platform,
   bouncebit.platform,
@@ -655,6 +657,7 @@ export const services: ServiceRaw[] = [
   ...blueshift.services,
   ...bonfida.services,
   ...bonkbot.services,
+  ...bonkfun.services,
   ...bonkrewards.services,
   ...boop.services,
   ...bouncebit.services,
