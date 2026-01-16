@@ -300,7 +300,6 @@ import * as wintermute from "./wintermute";
 import * as wormhole from "./wormhole";
 import * as y00ts from "./y00ts";
 import * as yaku from "./yaku";
-import * as yawww from "./yawww";
 import * as yieldfan from "./yieldfan";
 import * as zelo from "./zelo";
 import * as zeta from "./zeta";
@@ -605,7 +604,6 @@ export const platforms: PlatformRaw[] = [
   wormhole.platform,
   y00ts.platform,
   yaku.platform,
-  yawww.platform,
   yieldfan.platform,
   zelo.platform,
   zeta.platform,
@@ -911,7 +909,6 @@ export const services: ServiceRaw[] = [
   ...wormhole.services,
   ...y00ts.services,
   ...yaku.services,
-  ...yawww.services,
   ...yieldfan.services,
   ...zelo.services,
   ...zeta.services,
