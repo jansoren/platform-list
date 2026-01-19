@@ -10,7 +10,7 @@ export const platform: PlatformRaw = {
     telegram: "https://t.me/+NKjmb1u7LZw5YTU6",
   },
   tags: ["dapp"],
-  tokens: ["SoLiDMWBct5TurG1LNcocemBK7QmTn4P33GSrRrcd2n"],
+  platformToken: "SoLiDMWBct5TurG1LNcocemBK7QmTn4P33GSrRrcd2n",
 };
 
 const contract = {
