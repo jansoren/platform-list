@@ -65,7 +65,7 @@ const withdrawableTokensContract = {
   name: "Withdrawable Tokens",
   address: "raTejbjhXcMjSSq9SzkkdzxeWzttF1jz94F8CtvU9Ss",
   networkId: NetworkId.solana,
-}
+};
 
 export const service: ServiceRaw = {
   id: `ratex-main`,
@@ -81,7 +81,7 @@ export const withdrawableTokensService: ServiceRaw = {
   id: `ratex-withdrawable-tokens`,
   name: "Withdrawable Tokens",
   platformId: "ratex",
-  contractsRaw: [withdrawableTokensContract] ,
+  contractsRaw: [withdrawableTokensContract],
 };
 
 export const services: ServiceRaw[] = [service, withdrawableTokensService];
