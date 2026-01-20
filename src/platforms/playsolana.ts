@@ -10,6 +10,7 @@ export const platform: PlatformRaw = {
     discord: "https://discord.com/invite/playsolanaofficial",
     twitter: "https://www.x.com/playsolana",
   },
+  platformToken: "PLAYs3GSSadH2q2JLS7djp7yzeT75NK78XgrE5YLrfq",
 };
 
 const contract = {
