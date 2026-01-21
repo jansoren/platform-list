@@ -72,6 +72,7 @@ import * as degenapeacademy from "./degenapeacademy";
 import * as degencoinflip from "./degencoinflip";
 import * as degods from "./degods";
 import * as dflow from "./dflow";
+import * as diversifi from "./diversifi";
 import * as divvy from "./divvy";
 import * as domin8 from "./domin8";
 import * as doubleup from "./doubleup";
@@ -139,6 +140,7 @@ import * as jupiterExchange from "./jupiter-exchange";
 import * as jupiterGovernance from "./jupiter-governance";
 import * as jupiterJupuary from "./jupiter-jupuary";
 import * as jupiterLaunchpad from "./jupiter-launchpad";
+import * as jupiterMobile from "./jupiter-mobile";
 import * as jupiterPm from "./jupiter-pm";
 import * as jupiterWallet from "./jupiter-wallet";
 import * as kamino from "./kamino";
@@ -234,6 +236,7 @@ import * as ratex from "./ratex";
 import * as ratio from "./ratio";
 import * as raydium from "./raydium";
 import * as realms from "./realms";
+import * as refihub from "./refihub";
 import * as reflect from "./reflect";
 import * as relay from "./relay";
 import * as remora from "./remora";
@@ -253,6 +256,7 @@ import * as sky from "./sky";
 import * as smb from "./smb";
 import * as solana from "./solana";
 import * as solanaid from "./solanaid";
+import * as solanamobile from "./solanamobile";
 import * as solanart from "./solanart";
 import * as solayer from "./solayer";
 import * as solcard from "./solcard";
@@ -382,6 +386,7 @@ export const platforms: PlatformRaw[] = [
   degencoinflip.platform,
   degods.platform,
   dflow.platform,
+  diversifi.platform,
   divvy.platform,
   domin8.platform,
   doubleup.platform,
@@ -449,6 +454,7 @@ export const platforms: PlatformRaw[] = [
   jupiterGovernance.platform,
   jupiterJupuary.platform,
   jupiterLaunchpad.platform,
+  jupiterMobile.platform,
   jupiterPm.platform,
   jupiterWallet.platform,
   kamino.platform,
@@ -544,6 +550,7 @@ export const platforms: PlatformRaw[] = [
   ratio.platform,
   raydium.platform,
   realms.platform,
+  refihub.platform,
   reflect.platform,
   relay.platform,
   remora.platform,
@@ -563,6 +570,7 @@ export const platforms: PlatformRaw[] = [
   smb.platform,
   solana.platform,
   solanaid.platform,
+  solanamobile.platform,
   solanart.platform,
   solayer.platform,
   solcard.platform,
@@ -693,6 +701,7 @@ export const services: ServiceRaw[] = [
   ...degencoinflip.services,
   ...degods.services,
   ...dflow.services,
+  ...diversifi.services,
   ...divvy.services,
   ...domin8.services,
   ...doubleup.services,
@@ -760,6 +769,7 @@ export const services: ServiceRaw[] = [
   ...jupiterGovernance.services,
   ...jupiterJupuary.services,
   ...jupiterLaunchpad.services,
+  ...jupiterMobile.services,
   ...jupiterPm.services,
   ...jupiterWallet.services,
   ...kamino.services,
@@ -855,6 +865,7 @@ export const services: ServiceRaw[] = [
   ...ratio.services,
   ...raydium.services,
   ...realms.services,
+  ...refihub.services,
   ...reflect.services,
   ...relay.services,
   ...remora.services,
@@ -874,6 +885,7 @@ export const services: ServiceRaw[] = [
   ...smb.services,
   ...solana.services,
   ...solanaid.services,
+  ...solanamobile.services,
   ...solanart.services,
   ...solayer.services,
   ...solcard.services,
