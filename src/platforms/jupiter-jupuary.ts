@@ -7,7 +7,6 @@ export const platform: PlatformRaw = {
     "Jupuary is Jupiter's annual airdrop event for their governance token.",
   links: {
     website: "https://jupuary.jup.ag/",
-    twitter: "https://x.com/JupiterExchange",
   },
   tags: ["dao"],
 };
