@@ -4,6 +4,7 @@ import { PlatformRaw, ServiceRaw } from "../types";
 
 import * as _01 from "./01";
 import * as _1inch from "./1inch";
+import * as _21shares from "./21shares";
 import * as accessprotocol from "./accessprotocol";
 import * as adrastea from "./adrastea";
 import * as adrena from "./adrena";
@@ -12,6 +13,7 @@ import * as akuma from "./akuma";
 import * as aldrin from "./aldrin";
 import * as allbridge from "./allbridge";
 import * as alldomains from "./alldomains";
+import * as alphaledger from "./alphaledger";
 import * as altude from "./altude";
 import * as amppay from "./amppay";
 import * as amulet from "./amulet";
@@ -47,6 +49,7 @@ import * as bskt from "./bskt";
 import * as btcsol from "./btcsol";
 import * as bulktrade from "./bulktrade";
 import * as byreal from "./byreal";
+import * as canary from "./canary";
 import * as candle from "./candle";
 import * as carrot from "./carrot";
 import * as cashmere from "./cashmere";
@@ -59,6 +62,7 @@ import * as claimyoursols from "./claimyoursols";
 import * as claynosaurz from "./claynosaurz";
 import * as clone from "./clone";
 import * as coinmarketcap from "./coinmarketcap";
+import * as coinshares from "./coinshares";
 import * as collectorcrypt from "./collectorcrypt";
 import * as cropper from "./cropper";
 import * as cudis from "./cudis";
@@ -66,12 +70,14 @@ import * as cushion from "./cushion";
 import * as cyberfrogs from "./cyberfrogs";
 import * as cytonic from "./cytonic";
 import * as debridge from "./debridge";
+import * as defidevcorp from "./defidevcorp";
 import * as defiland from "./defiland";
 import * as defituna from "./defituna";
 import * as degenapeacademy from "./degenapeacademy";
 import * as degencoinflip from "./degencoinflip";
 import * as degods from "./degods";
 import * as dflow from "./dflow";
+import * as digitalkidu from "./digitalkidu";
 import * as diversifi from "./diversifi";
 import * as divvy from "./divvy";
 import * as domin8 from "./domin8";
@@ -82,6 +88,7 @@ import * as dumpy from "./dumpy";
 import * as elemental from "./elemental";
 import * as ensofi from "./ensofi";
 import * as epicentral from "./epicentral";
+import * as etherfuse from "./etherfuse";
 import * as exoticmarkets from "./exoticmarkets";
 import * as exponent from "./exponent";
 import * as famousfoxfederation from "./famousfoxfederation";
@@ -91,6 +98,7 @@ import * as flash from "./flash";
 import * as flexlend from "./flexlend";
 import * as flowmatic from "./flowmatic";
 import * as fluxbeam from "./fluxbeam";
+import * as forwardindustries from "./forwardindustries";
 import * as fragmetric from "./fragmetric";
 import * as francium from "./francium";
 import * as franklintempleton from "./franklintempleton";
@@ -98,6 +106,7 @@ import * as frax from "./frax";
 import * as friktion from "./friktion";
 import * as fuse from "./fuse";
 import * as futarchy from "./futarchy";
+import * as galaxy from "./galaxy";
 import * as gary from "./gary";
 import * as gauntlet from "./gauntlet";
 import * as gecko from "./gecko";
@@ -111,6 +120,7 @@ import * as goosefx from "./goosefx";
 import * as gpool from "./gpool";
 import * as graphite from "./graphite";
 import * as grass from "./grass";
+import * as grayscale from "./grayscale";
 import * as growcorp from "./growcorp";
 import * as guano from "./guano";
 import * as hadeswap from "./hadeswap";
@@ -241,6 +251,7 @@ import * as reflect from "./reflect";
 import * as relay from "./relay";
 import * as remora from "./remora";
 import * as renzo from "./renzo";
+import * as robinhood from "./robinhood";
 import * as runemine from "./runemine";
 import * as saber from "./saber";
 import * as sanctum from "./sanctum";
@@ -279,7 +290,9 @@ import * as staratlas from "./staratlas";
 import * as stepfinance from "./stepfinance";
 import * as streamflow from "./streamflow";
 import * as sunny from "./sunny";
+import * as superstate from "./superstate";
 import * as switchboard from "./switchboard";
+import * as sygnum from "./sygnum";
 import * as symmetry from "./symmetry";
 import * as tensor from "./tensor";
 import * as texture from "./texture";
@@ -298,6 +311,7 @@ import * as tuyo from "./tuyo";
 import * as underdog from "./underdog";
 import * as uprock from "./uprock";
 import * as uxd from "./uxd";
+import * as vaneck from "./vaneck";
 import * as vaultka from "./vaultka";
 import * as vectis from "./vectis";
 import * as vidar from "./vidar";
@@ -318,6 +332,7 @@ import * as zeus from "./zeus";
 export const platforms: PlatformRaw[] = [
   _01.platform,
   _1inch.platform,
+  _21shares.platform,
   accessprotocol.platform,
   adrastea.platform,
   adrena.platform,
@@ -326,6 +341,7 @@ export const platforms: PlatformRaw[] = [
   aldrin.platform,
   allbridge.platform,
   alldomains.platform,
+  alphaledger.platform,
   altude.platform,
   amppay.platform,
   amulet.platform,
@@ -361,6 +377,7 @@ export const platforms: PlatformRaw[] = [
   btcsol.platform,
   bulktrade.platform,
   byreal.platform,
+  canary.platform,
   candle.platform,
   carrot.platform,
   cashmere.platform,
@@ -373,6 +390,7 @@ export const platforms: PlatformRaw[] = [
   claynosaurz.platform,
   clone.platform,
   coinmarketcap.platform,
+  coinshares.platform,
   collectorcrypt.platform,
   cropper.platform,
   cudis.platform,
@@ -380,12 +398,14 @@ export const platforms: PlatformRaw[] = [
   cyberfrogs.platform,
   cytonic.platform,
   debridge.platform,
+  defidevcorp.platform,
   defiland.platform,
   defituna.platform,
   degenapeacademy.platform,
   degencoinflip.platform,
   degods.platform,
   dflow.platform,
+  digitalkidu.platform,
   diversifi.platform,
   divvy.platform,
   domin8.platform,
@@ -396,6 +416,7 @@ export const platforms: PlatformRaw[] = [
   elemental.platform,
   ensofi.platform,
   epicentral.platform,
+  etherfuse.platform,
   exoticmarkets.platform,
   exponent.platform,
   famousfoxfederation.platform,
@@ -405,6 +426,7 @@ export const platforms: PlatformRaw[] = [
   flexlend.platform,
   flowmatic.platform,
   fluxbeam.platform,
+  forwardindustries.platform,
   fragmetric.platform,
   francium.platform,
   franklintempleton.platform,
@@ -412,6 +434,7 @@ export const platforms: PlatformRaw[] = [
   friktion.platform,
   fuse.platform,
   futarchy.platform,
+  galaxy.platform,
   gary.platform,
   gauntlet.platform,
   gecko.platform,
@@ -425,6 +448,7 @@ export const platforms: PlatformRaw[] = [
   gpool.platform,
   graphite.platform,
   grass.platform,
+  grayscale.platform,
   growcorp.platform,
   guano.platform,
   hadeswap.platform,
@@ -555,6 +579,7 @@ export const platforms: PlatformRaw[] = [
   relay.platform,
   remora.platform,
   renzo.platform,
+  robinhood.platform,
   runemine.platform,
   saber.platform,
   sanctum.platform,
@@ -593,7 +618,9 @@ export const platforms: PlatformRaw[] = [
   stepfinance.platform,
   streamflow.platform,
   sunny.platform,
+  superstate.platform,
   switchboard.platform,
+  sygnum.platform,
   symmetry.platform,
   tensor.platform,
   texture.platform,
@@ -612,6 +639,7 @@ export const platforms: PlatformRaw[] = [
   underdog.platform,
   uprock.platform,
   uxd.platform,
+  vaneck.platform,
   vaultka.platform,
   vectis.platform,
   vidar.platform,
@@ -633,6 +661,7 @@ export const platforms: PlatformRaw[] = [
 export const services: ServiceRaw[] = [
   ..._01.services,
   ..._1inch.services,
+  ..._21shares.services,
   ...accessprotocol.services,
   ...adrastea.services,
   ...adrena.services,
@@ -641,6 +670,7 @@ export const services: ServiceRaw[] = [
   ...aldrin.services,
   ...allbridge.services,
   ...alldomains.services,
+  ...alphaledger.services,
   ...altude.services,
   ...amppay.services,
   ...amulet.services,
@@ -676,6 +706,7 @@ export const services: ServiceRaw[] = [
   ...btcsol.services,
   ...bulktrade.services,
   ...byreal.services,
+  ...canary.services,
   ...candle.services,
   ...carrot.services,
   ...cashmere.services,
@@ -688,6 +719,7 @@ export const services: ServiceRaw[] = [
   ...claynosaurz.services,
   ...clone.services,
   ...coinmarketcap.services,
+  ...coinshares.services,
   ...collectorcrypt.services,
   ...cropper.services,
   ...cudis.services,
@@ -695,12 +727,14 @@ export const services: ServiceRaw[] = [
   ...cyberfrogs.services,
   ...cytonic.services,
   ...debridge.services,
+  ...defidevcorp.services,
   ...defiland.services,
   ...defituna.services,
   ...degenapeacademy.services,
   ...degencoinflip.services,
   ...degods.services,
   ...dflow.services,
+  ...digitalkidu.services,
   ...diversifi.services,
   ...divvy.services,
   ...domin8.services,
@@ -711,6 +745,7 @@ export const services: ServiceRaw[] = [
   ...elemental.services,
   ...ensofi.services,
   ...epicentral.services,
+  ...etherfuse.services,
   ...exoticmarkets.services,
   ...exponent.services,
   ...famousfoxfederation.services,
@@ -720,6 +755,7 @@ export const services: ServiceRaw[] = [
   ...flexlend.services,
   ...flowmatic.services,
   ...fluxbeam.services,
+  ...forwardindustries.services,
   ...fragmetric.services,
   ...francium.services,
   ...franklintempleton.services,
@@ -727,6 +763,7 @@ export const services: ServiceRaw[] = [
   ...friktion.services,
   ...fuse.services,
   ...futarchy.services,
+  ...galaxy.services,
   ...gary.services,
   ...gauntlet.services,
   ...gecko.services,
@@ -740,6 +777,7 @@ export const services: ServiceRaw[] = [
   ...gpool.services,
   ...graphite.services,
   ...grass.services,
+  ...grayscale.services,
   ...growcorp.services,
   ...guano.services,
   ...hadeswap.services,
@@ -870,6 +908,7 @@ export const services: ServiceRaw[] = [
   ...relay.services,
   ...remora.services,
   ...renzo.services,
+  ...robinhood.services,
   ...runemine.services,
   ...saber.services,
   ...sanctum.services,
@@ -908,7 +947,9 @@ export const services: ServiceRaw[] = [
   ...stepfinance.services,
   ...streamflow.services,
   ...sunny.services,
+  ...superstate.services,
   ...switchboard.services,
+  ...sygnum.services,
   ...symmetry.services,
   ...tensor.services,
   ...texture.services,
@@ -927,6 +968,7 @@ export const services: ServiceRaw[] = [
   ...underdog.services,
   ...uprock.services,
   ...uxd.services,
+  ...vaneck.services,
   ...vaultka.services,
   ...vectis.services,
   ...vidar.services,
