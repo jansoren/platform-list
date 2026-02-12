@@ -26,6 +26,4 @@ export const stakingService = {
   contractsRaw: [stakingContract],
 };
 
-export const services = [
-  stakingService,
-];
+export const services = [stakingService];
