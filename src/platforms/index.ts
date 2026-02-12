@@ -307,6 +307,7 @@ import * as thevault from "./thevault";
 import * as threshold from "./threshold";
 import * as tiplink from "./tiplink";
 import * as titan from "./titan";
+import * as tramplin from "./tramplin";
 import * as trepa from "./trepa";
 import * as triad from "./triad";
 import * as tribeca from "./tribeca";
@@ -646,6 +647,7 @@ export const platforms: PlatformRaw[] = [
   threshold.platform,
   tiplink.platform,
   titan.platform,
+  tramplin.platform,
   trepa.platform,
   triad.platform,
   tribeca.platform,
@@ -986,6 +988,7 @@ export const services: ServiceRaw[] = [
   ...threshold.services,
   ...tiplink.services,
   ...titan.services,
+  ...tramplin.services,
   ...trepa.services,
   ...triad.services,
   ...tribeca.services,
