@@ -71,6 +71,7 @@ import * as cudis from "./cudis";
 import * as cushion from "./cushion";
 import * as cyberfrogs from "./cyberfrogs";
 import * as cytonic from "./cytonic";
+import * as daosdotfun from "./daosdotfun";
 import * as debridge from "./debridge";
 import * as defidevcorp from "./defidevcorp";
 import * as defiland from "./defiland";
@@ -409,6 +410,7 @@ export const platforms: PlatformRaw[] = [
   cushion.platform,
   cyberfrogs.platform,
   cytonic.platform,
+  daosdotfun.platform,
   debridge.platform,
   defidevcorp.platform,
   defiland.platform,
@@ -748,6 +750,7 @@ export const services: ServiceRaw[] = [
   ...cushion.services,
   ...cyberfrogs.services,
   ...cytonic.services,
+  ...daosdotfun.services,
   ...debridge.services,
   ...defidevcorp.services,
   ...defiland.services,
