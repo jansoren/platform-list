@@ -1,73 +1,31 @@
 import { NetworkId, PlatformRaw } from "../types";
 
 export const platform: PlatformRaw = {
-  id: "jet",
-  name: "Jet",
-  description:
-    "Jet Protocol was a lending and borrowing platform with margin trading capabilities.",
+  id: "icm",
+  name: "ICM.RUN",
+  description: "Solana's Internet Capital Markets: DAO & Incubator.",
   links: {
-    website: "https://jetprotocol.substack.com/",
-    twitter: "https://x.com/jetprotocol",
+    website: "https://icm.run/",
+    twitter: "https://x.com/icmdotrun",
+    telegram: "https://t.me/icmdotrun",
   },
-  tags: ["dapp", "lending", "defi"],
-  isDeprecated: true,
+  tags: ["dao"],
+  platformToken: "G5bStqnKXv11fmPvMaagUbZi86BGnpf9zZtyPQtAdaos",
 };
 
-const mainContract = {
-  name: "Main",
-  address: "JPLockxtkngHkaQT5AuRYow3HyUv5qWzmhwsCPd653n",
+const stakingContract = {
+  name: "Staking",
+  address: "BsMCB3NGDVstxsxK34MnazJTHuMjWTjngjGyybVTuS7s",
   networkId: NetworkId.solana,
 };
 
-const marginPoolContract = {
-  name: "Margin Pool",
-  address: "JPPooLEqRo3NCSx82EdE2VZY5vUaSsgskpZPBHNGVLZ",
-  networkId: NetworkId.solana,
-};
-
-const airspaceContract = {
-  name: "Airspace",
-  address: "JPASMkxARMmbeahk37H8PAAP1UzPNC4wGhvwLnBsfHi",
-  networkId: NetworkId.solana,
-};
-
-const marginContract = {
-  name: "Margin",
-  address: "JPMRGNgRk3w2pzBM1RLNBnpGxQYsFQ3yXKpuk4tTXVZ",
-  networkId: NetworkId.solana,
-};
-
-export const mainService = {
-  id: `${platform.id}-main`,
-  name: "Main",
+export const stakingService = {
+  id: `${platform.id}-staking`,
+  name: "Staking",
   platformId: platform.id,
-  contractsRaw: [mainContract],
-};
-
-export const marginPoolService = {
-  id: `${platform.id}-margin-pool`,
-  name: "Margin Pool",
-  platformId: platform.id,
-  contractsRaw: [marginPoolContract],
-};
-
-export const airspaceService = {
-  id: `${platform.id}-airspace`,
-  name: "Airspace",
-  platformId: platform.id,
-  contractsRaw: [airspaceContract],
-};
-
-export const marginService = {
-  id: `${platform.id}-margin`,
-  name: "Margin",
-  platformId: platform.id,
-  contractsRaw: [marginContract],
+  contractsRaw: [stakingContract],
 };
 
 export const services = [
-  mainService,
-  marginPoolService,
-  airspaceService,
-  marginService,
+  stakingService,
 ];
