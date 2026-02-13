@@ -3,7 +3,8 @@ import { PlatformRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "phettagotchi",
   name: "Phettagotchi",
-  description: "Phettagotchi is a virtual pet game on Solana powered by the $PHETTA token.",
+  description:
+    "Phettagotchi is a virtual pet game on Solana powered by the $PHETTA token.",
   tags: ["memecoin", "gaming"],
   links: {
     website: "https://pet.phetta.lol",

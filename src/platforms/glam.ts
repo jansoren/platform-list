@@ -54,17 +54,13 @@ export const protocolService: ServiceRaw = {
   id: `${platform.id}-protocol`,
   name: "Protocol",
   platformId: platform.id,
-  contractsRaw: [
-    protocolContract,
-  ],
+  contractsRaw: [protocolContract],
 };
 export const mintService: ServiceRaw = {
   id: `${platform.id}-mint`,
   name: "Mint",
   platformId: platform.id,
-  contractsRaw: [
-    mintContract,
-  ],
+  contractsRaw: [mintContract],
 };
 export const cctpService: ServiceRaw = {
   id: `${platform.id}-cctp`,
