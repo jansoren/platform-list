@@ -179,6 +179,7 @@ import * as lince from "./lince";
 import * as lodesupply from "./lodesupply";
 import * as lombard from "./lombard";
 import * as loopscale from "./loopscale";
+import * as lpagent from "./lpagent";
 import * as m1capital from "./m1capital";
 import * as macaron from "./macaron";
 import * as madbears from "./madbears";
@@ -230,6 +231,7 @@ import * as pathfinders from "./pathfinders";
 import * as paxos from "./paxos";
 import * as perena from "./perena";
 import * as phantom from "./phantom";
+import * as phettagotchi from "./phettagotchi";
 import * as phoenix from "./phoenix";
 import * as photofinish from "./photofinish";
 import * as photon from "./photon";
@@ -269,6 +271,7 @@ import * as sanctum from "./sanctum";
 import * as sandglass from "./sandglass";
 import * as save from "./save";
 import * as securitize from "./securitize";
+import * as sendai from "./sendai";
 import * as sendit from "./sendit";
 import * as sentre from "./sentre";
 import * as serum from "./serum";
@@ -305,6 +308,7 @@ import * as superstate from "./superstate";
 import * as switchboard from "./switchboard";
 import * as sygnum from "./sygnum";
 import * as symmetry from "./symmetry";
+import * as tender from "./tender";
 import * as tensor from "./tensor";
 import * as texture from "./texture";
 import * as thevault from "./thevault";
@@ -523,6 +527,7 @@ export const platforms: PlatformRaw[] = [
   lodesupply.platform,
   lombard.platform,
   loopscale.platform,
+  lpagent.platform,
   m1capital.platform,
   macaron.platform,
   madbears.platform,
@@ -574,6 +579,7 @@ export const platforms: PlatformRaw[] = [
   paxos.platform,
   perena.platform,
   phantom.platform,
+  phettagotchi.platform,
   phoenix.platform,
   photofinish.platform,
   photon.platform,
@@ -613,6 +619,7 @@ export const platforms: PlatformRaw[] = [
   sandglass.platform,
   save.platform,
   securitize.platform,
+  sendai.platform,
   sendit.platform,
   sentre.platform,
   serum.platform,
@@ -649,6 +656,7 @@ export const platforms: PlatformRaw[] = [
   switchboard.platform,
   sygnum.platform,
   symmetry.platform,
+  tender.platform,
   tensor.platform,
   texture.platform,
   thevault.platform,
@@ -868,6 +876,7 @@ export const services: ServiceRaw[] = [
   ...lodesupply.services,
   ...lombard.services,
   ...loopscale.services,
+  ...lpagent.services,
   ...m1capital.services,
   ...macaron.services,
   ...madbears.services,
@@ -919,6 +928,7 @@ export const services: ServiceRaw[] = [
   ...paxos.services,
   ...perena.services,
   ...phantom.services,
+  ...phettagotchi.services,
   ...phoenix.services,
   ...photofinish.services,
   ...photon.services,
@@ -958,6 +968,7 @@ export const services: ServiceRaw[] = [
   ...sandglass.services,
   ...save.services,
   ...securitize.services,
+  ...sendai.services,
   ...sendit.services,
   ...sentre.services,
   ...serum.services,
@@ -994,6 +1005,7 @@ export const services: ServiceRaw[] = [
   ...switchboard.services,
   ...sygnum.services,
   ...symmetry.services,
+  ...tender.services,
   ...tensor.services,
   ...texture.services,
   ...thevault.services,
