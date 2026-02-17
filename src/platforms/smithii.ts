@@ -5,7 +5,7 @@ export const platform: PlatformRaw = {
   name: "Smithii",
   description:
     "Smithii is an all-in-one suite of tools designed for blockchain token creators to launch, edit, and manage the liquidity of their crypto projects quickly, affordably, and without the need for programming knowledge.",
-  defillamaId: "smithii",
+  defiLlamaId: "smithii",
   links: {
     website: "https://tools.smithii.io/",
     twitter: "https://x.com/SmithiiTools",
