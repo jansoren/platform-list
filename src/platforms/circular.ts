@@ -13,6 +13,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/Circular_fi",
     documentation: "https://docs.circular.fi/",
   },
+  addedAt: 1771243200000,
 };
 
 export const services: ServiceRaw[] = [];

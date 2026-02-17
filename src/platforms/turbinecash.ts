@@ -9,6 +9,7 @@ export const platform: PlatformRaw = {
     website: "https://turbine.cash/",
     twitter: "https://x.com/turbine_cash",
   },
+  addedAt: 1771243200000,
 };
 
 export const services: ServiceRaw[] = [];

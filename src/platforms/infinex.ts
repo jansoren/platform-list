@@ -13,6 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.infinex.cc/",
   },
   tokens: ["inxKXw9V2NDZE7hDijzpJaKKUb97NEPJDTCEEiYg4yY"],
+  addedAt: 1771243200000,
 };
 
 export const services: ServiceRaw[] = [];

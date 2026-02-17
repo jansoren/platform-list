@@ -12,6 +12,7 @@ export const platform: PlatformRaw = {
     twitter: "https://x.com/pacifica_fi",
     documentation: "https://docs.pacifica.fi",
   },
+  addedAt: 1771243200000,
 };
 
 export const services: ServiceRaw[] = [];

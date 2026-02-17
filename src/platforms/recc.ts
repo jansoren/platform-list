@@ -12,6 +12,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.recc.finance/",
   },
   tags: ["dapp", "rwa"],
+  addedAt: 1771243200000,
 };
 
 export const services: ServiceRaw[] = [];
