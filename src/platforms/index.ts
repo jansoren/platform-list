@@ -92,6 +92,7 @@ import * as dumpy from "./dumpy";
 import * as elemental from "./elemental";
 import * as ensofi from "./ensofi";
 import * as epicentral from "./epicentral";
+import * as eternalstakefinance from "./eternal-stake-finance"
 import * as etherfuse from "./etherfuse";
 import * as exoticmarkets from "./exoticmarkets";
 import * as exponent from "./exponent";
@@ -440,6 +441,7 @@ export const platforms: PlatformRaw[] = [
   elemental.platform,
   ensofi.platform,
   epicentral.platform,
+  eternalstakefinance.platform,
   etherfuse.platform,
   exoticmarkets.platform,
   exponent.platform,
@@ -789,6 +791,7 @@ export const services: ServiceRaw[] = [
   ...elemental.services,
   ...ensofi.services,
   ...epicentral.services,
+  ...eternalstakefinance.services,
   ...etherfuse.services,
   ...exoticmarkets.services,
   ...exponent.services,
