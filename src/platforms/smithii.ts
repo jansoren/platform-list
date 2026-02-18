@@ -13,7 +13,7 @@ export const platform: PlatformRaw = {
     documentation: "https://docs.smithii.io/",
     github: "https://github.com/SmithiiDev",
   },
-  tags: ["dapp", "tool", "launchpad"],
+  tags: ["dapp", "tool"],
 };
 
 export const services: ServiceRaw[] = [];
