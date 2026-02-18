@@ -58,6 +58,7 @@ import * as cega from "./cega";
 import * as chopcorp from "./chopcorp";
 import * as circle from "./circle";
 import * as circuit from "./circuit";
+import * as circular from "./circular";
 import * as citrus from "./citrus";
 import * as claimyoursols from "./claimyoursols";
 import * as claynosaurz from "./claynosaurz";
@@ -150,6 +151,7 @@ import * as hxro from "./hxro";
 import * as hylo from "./hylo";
 import * as icm from "./icm";
 import * as iloop from "./iloop";
+import * as infinex from "./infinex";
 import * as invariant from "./invariant";
 import * as jet from "./jet";
 import * as jito from "./jito";
@@ -199,6 +201,7 @@ import * as metaplex from "./metaplex";
 import * as metengine from "./metengine";
 import * as meteora from "./meteora";
 import * as mintech from "./mintech";
+import * as mixoor from "./mixoor";
 import * as mooncake from "./mooncake";
 import * as moonwalk from "./moonwalk";
 import * as moose from "./moose";
@@ -223,6 +226,7 @@ import * as ore from "./ore";
 import * as oreblue from "./oreblue";
 import * as oresupply from "./oresupply";
 import * as oro from "./oro";
+import * as pacifica from "./pacifica";
 import * as pancakeswap from "./pancakeswap";
 import * as paraswap from "./paraswap";
 import * as parcl from "./parcl";
@@ -259,6 +263,7 @@ import * as ratex from "./ratex";
 import * as ratio from "./ratio";
 import * as raydium from "./raydium";
 import * as realms from "./realms";
+import * as recc from "./recc";
 import * as refihub from "./refihub";
 import * as reflect from "./reflect";
 import * as relay from "./relay";
@@ -279,6 +284,7 @@ import * as sgforge from "./sgforge";
 import * as sharky from "./sharky";
 import * as sky from "./sky";
 import * as smb from "./smb";
+import * as smithii from "./smithii";
 import * as solana from "./solana";
 import * as solanaid from "./solanaid";
 import * as solanamobile from "./solanamobile";
@@ -324,6 +330,7 @@ import * as trove from "./trove";
 import * as trustfun from "./trustfun";
 import * as tuktuk from "./tuktuk";
 import * as tulip from "./tulip";
+import * as turbinecash from "./turbinecash";
 import * as tuyo from "./tuyo";
 import * as unclaimedsol from "./unclaimedsol";
 import * as underdog from "./underdog";
@@ -406,6 +413,7 @@ export const platforms: PlatformRaw[] = [
   chopcorp.platform,
   circle.platform,
   circuit.platform,
+  circular.platform,
   citrus.platform,
   claimyoursols.platform,
   claynosaurz.platform,
@@ -498,6 +506,7 @@ export const platforms: PlatformRaw[] = [
   hylo.platform,
   icm.platform,
   iloop.platform,
+  infinex.platform,
   invariant.platform,
   jet.platform,
   jito.platform,
@@ -547,6 +556,7 @@ export const platforms: PlatformRaw[] = [
   metengine.platform,
   meteora.platform,
   mintech.platform,
+  mixoor.platform,
   mooncake.platform,
   moonwalk.platform,
   moose.platform,
@@ -571,6 +581,7 @@ export const platforms: PlatformRaw[] = [
   oreblue.platform,
   oresupply.platform,
   oro.platform,
+  pacifica.platform,
   pancakeswap.platform,
   paraswap.platform,
   parcl.platform,
@@ -607,6 +618,7 @@ export const platforms: PlatformRaw[] = [
   ratio.platform,
   raydium.platform,
   realms.platform,
+  recc.platform,
   refihub.platform,
   reflect.platform,
   relay.platform,
@@ -627,6 +639,7 @@ export const platforms: PlatformRaw[] = [
   sharky.platform,
   sky.platform,
   smb.platform,
+  smithii.platform,
   solana.platform,
   solanaid.platform,
   solanamobile.platform,
@@ -672,6 +685,7 @@ export const platforms: PlatformRaw[] = [
   trustfun.platform,
   tuktuk.platform,
   tulip.platform,
+  turbinecash.platform,
   tuyo.platform,
   unclaimedsol.platform,
   underdog.platform,
@@ -755,6 +769,7 @@ export const services: ServiceRaw[] = [
   ...chopcorp.services,
   ...circle.services,
   ...circuit.services,
+  ...circular.services,
   ...citrus.services,
   ...claimyoursols.services,
   ...claynosaurz.services,
@@ -847,6 +862,7 @@ export const services: ServiceRaw[] = [
   ...hylo.services,
   ...icm.services,
   ...iloop.services,
+  ...infinex.services,
   ...invariant.services,
   ...jet.services,
   ...jito.services,
@@ -896,6 +912,7 @@ export const services: ServiceRaw[] = [
   ...metengine.services,
   ...meteora.services,
   ...mintech.services,
+  ...mixoor.services,
   ...mooncake.services,
   ...moonwalk.services,
   ...moose.services,
@@ -920,6 +937,7 @@ export const services: ServiceRaw[] = [
   ...oreblue.services,
   ...oresupply.services,
   ...oro.services,
+  ...pacifica.services,
   ...pancakeswap.services,
   ...paraswap.services,
   ...parcl.services,
@@ -956,6 +974,7 @@ export const services: ServiceRaw[] = [
   ...ratio.services,
   ...raydium.services,
   ...realms.services,
+  ...recc.services,
   ...refihub.services,
   ...reflect.services,
   ...relay.services,
@@ -976,6 +995,7 @@ export const services: ServiceRaw[] = [
   ...sharky.services,
   ...sky.services,
   ...smb.services,
+  ...smithii.services,
   ...solana.services,
   ...solanaid.services,
   ...solanamobile.services,
@@ -1021,6 +1041,7 @@ export const services: ServiceRaw[] = [
   ...trustfun.services,
   ...tuktuk.services,
   ...tulip.services,
+  ...turbinecash.services,
   ...tuyo.services,
   ...unclaimedsol.services,
   ...underdog.services,
