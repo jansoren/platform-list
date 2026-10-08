@@ -12,7 +12,7 @@ export const platform: PlatformRaw = {
     github: "https://github.com/Mycelium-Finance",
   },
   tags: ["dapp", "defi", "liquidity-provider"],
-  platformToken: "BN71JwRWvNuqYQtxWrfpuYsMpFn3nSs5xDKEN78nyn4"
+  platformToken: "BN71JwRWvNuqYQtxWrfpuYsMpFn3nSs5xDKEN78nyn4",
 };
 
 export const services: ServiceRaw[] = [];
