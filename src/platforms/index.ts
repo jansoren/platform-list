@@ -238,6 +238,7 @@ import * as mooncake from "./mooncake";
 import * as moonpay from "./moonpay";
 import * as moonwalk from "./moonwalk";
 import * as moose from "./moose";
+import * as myceliumfinance from "./myceliumfinance";
 import * as mysticdao from "./mysticdao";
 import * as nativeStake from "./native-stake";
 import * as neutral from "./neutral";
@@ -662,6 +663,7 @@ export const platforms: PlatformRaw[] = [
   moonpay.platform,
   moonwalk.platform,
   moose.platform,
+  myceliumfinance.platform,
   mysticdao.platform,
   nativeStake.platform,
   neutral.platform,
@@ -1087,6 +1089,7 @@ export const services: ServiceRaw[] = [
   ...moonpay.services,
   ...moonwalk.services,
   ...moose.services,
+  ...myceliumfinance.services,
   ...mysticdao.services,
   ...nativeStake.services,
   ...neutral.services,
