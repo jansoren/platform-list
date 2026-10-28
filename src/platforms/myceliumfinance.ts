@@ -3,12 +3,13 @@ import { PlatformRaw, ServiceRaw } from "../types";
 export const platform: PlatformRaw = {
   id: "myceliumfinance",
   name: "Mycelium Finance",
+  parentId: eternalStakePlatform.id,
   description:
-    "Mycelium Finance strategically connects liquidity across selected DeFi, RWA, AI, GameFi and Meme projects on Solana.",
+    "Mycelium Finance pairs its MYC token with other Solana tokens in DEX liquidity pools and earns a share of trading fees.",
   links: {
     website: "https://www.myceliumfinance.com/",
     twitter: "https://x.com/myceliumfinance",
-    discord: "https://discord.gg/ct6Yp9gGt",
+    discord: "https://discord.gg/5M7FsQcGq",
     github: "https://github.com/Mycelium-Finance",
   },
   tags: ["dapp", "defi", "liquidity-provider"],
