@@ -1,9 +1,10 @@
 import { PlatformRaw, ServiceRaw } from "../types";
+import { platform as eternalstakefinancePlatform } from "./eternalstakefinance";
 
 export const platform: PlatformRaw = {
   id: "myceliumfinance",
   name: "Mycelium Finance",
-  parentId: eternalstakefinance.id,
+  parentId: eternalstakefinancePlatform.id,
   description:
     "Mycelium Finance pairs its MYC token with other Solana tokens in DEX liquidity pools and earns a share of trading fees.",
   links: {
